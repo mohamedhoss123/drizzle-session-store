@@ -3,8 +3,9 @@
 import session from 'express-session';
 
 
-class DrizzleSessionStore extends session.Store {
+export class DrizzleSessionStore extends session.Store {
   constructor(private readonly db: any, private readonly sessionTable: any) {
+
     super();
   }
 
@@ -25,7 +26,9 @@ class DrizzleSessionStore extends session.Store {
   async set(sid: string, session: session.SessionData, callback?: (err?: any) => void) {
     try {
       const expire = new Date(session.cookie.expires as any);
-      await this.db.insertInto(this.sessionTable).values({ sid, session, expire }).onConflict().merge().execute();
+      console.log({ sid, session, expire });
+
+      await this.db.insert(this.sessionTable).values({ sid, session, expire });
       callback?.();
     } catch (err) {
       callback?.(err);
@@ -42,4 +45,4 @@ class DrizzleSessionStore extends session.Store {
   }
 }
 
-export default DrizzleSessionStore;
+

@@ -2,8 +2,8 @@
   "name": "drizzle-session-store",
   "version": "1.0.0",
   "description": "a package for storing session using drizzle orm for express and fastify ",
-  "main": "index.js",
-  "types": "",
+  "main": "./dist/main.js",
+  "types": "./dist/main.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -18,5 +18,6 @@
   "peerDependencies": {
     "drizzle-orm": "^0.31.2",
     "express-session": "^1.18.0"
-  }
+  },
+  "repository":"https://github.com/mohamedhoss123/drizzle-session-store"
 }
