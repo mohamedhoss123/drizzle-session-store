@@ -1,0 +1,22 @@
+{
+  "name": "drizzle-session-store",
+  "version": "1.0.0",
+  "description": "a package for storing session using drizzle orm for express and fastify ",
+  "main": "index.js",
+  "types": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mohamed Hossam",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/express-session": "^1.18.0",
+    "drizzle-kit": "^0.22.7",
+    "mysql2": "^3.10.1",
+    "typescript": "^5.4.5"
+  },
+  "peerDependencies": {
+    "drizzle-orm": "^0.31.2",
+    "express-session": "^1.18.0"
+  }
+}
