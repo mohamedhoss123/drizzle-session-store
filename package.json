@@ -10,14 +10,13 @@
   "author": "Mohamed Hossam",
   "license": "MIT",
   "devDependencies": {
-    "@types/express-session": "^1.18.0",
-    "drizzle-kit": "^0.22.7",
-    "mysql2": "^3.10.1",
-    "typescript": "^5.4.5"
+    "@types/express-session": "^1.18.1",
+    "drizzle-kit": "^0.31.1",
+    "typescript": "^5.8.3"
   },
   "peerDependencies": {
-    "drizzle-orm": "^0.31.2",
-    "express-session": "^1.18.0"
+    "drizzle-orm": "^0.44.0",
+    "express-session": "^1.18.1"
   },
-  "repository":"https://github.com/mohamedhoss123/drizzle-session-store"
+  "repository": "https://github.com/mohamedhoss123/drizzle-session-store"
 }
